@@ -1,0 +1,179 @@
+/* RESET */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f3f4f7;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+/* MAIN WRAPPER */
+.wrapper {
+  width: 100%;
+  max-width: 850px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* SECTION TITLES */
+.header h3,
+.data-pengguna h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2b2b2b;
+}
+
+/* FORM INPUT */
+.input-box {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.input-box input {
+  flex: 1;
+  min-width: 220px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #d6d6d6;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.input-box input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 7px rgba(0, 123, 255, 0.4);
+  outline: none;
+}
+
+/* BUTTON PRIMARY (Tambah Data) */
+.input-box button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #007bff; /* primary blue */
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+  font-size: 14px;
+}
+
+.input-box button:hover {
+  background: #006add;
+}
+
+/* USER LIST SECTION */
+.data-pengguna {
+  width: 100%;
+}
+
+.data-pengguna ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.data-pengguna li {
+  background: #fbfbff;
+  border: 1px solid #e4e4ff;
+  padding: 15px 18px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.25s;
+}
+
+.data-pengguna li:hover {
+  background: #f1f6ff;
+  transform: translateY(-2px);
+}
+
+.data-pengguna li > div:first-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.email {
+  color: #6d6d6d;
+  font-size: 13px;
+}
+
+/* ACTION BUTTON CONTAINER */
+.data-pengguna li > div:last-child {
+  display: flex;
+  gap: 6px;
+  margin-left: auto;
+}
+
+/* === ACTION BUTTONS === */
+.btn-edit,
+.btn-delete {
+  padding: 8px 15px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 13px;
+  color: #fff;
+}
+
+/* EDIT (YELLOW — WARNING) */
+.btn-edit {
+  background: #f0ad4e;
+}
+
+.btn-edit:hover {
+  background: #e09936;
+}
+
+/* DELETE (RED — DANGER) */
+.btn-delete {
+  background: #f44336;
+}
+
+.btn-delete:hover {
+  background: #cf352a;
+}
+
+/* Remove link default color */
+.btn-edit .edit,
+.btn-delete .delete {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 580px) {
+  .data-pengguna li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .input-box {
+    flex-direction: column;
+  }
+
+  .input-box input,
+  .input-box button {
+    width: 100%;
+  }
+}

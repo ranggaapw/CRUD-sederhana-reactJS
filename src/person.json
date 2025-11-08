@@ -1,0 +1,24 @@
+{
+  "person": [
+    {
+      "id": "eb61",
+      "name": "Fajar ",
+      "email": "fajar@gmail.com"
+    },
+    {
+      "id": "58fc",
+      "name": "Rahman",
+      "email": "rahman@gmail.com"
+    },
+    {
+      "id": "f669",
+      "name": "Rangga ",
+      "email": "rangga@gmail.com"
+    },
+    {
+      "name": "Budi",
+      "email": "budi@gmail.com",
+      "id": "3db8"
+    }
+  ]
+}
