@@ -1,16 +1,51 @@
-# React + Vite
+# 🧩 Simple CRUD App — React JS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple CRUD (Create, Read, Update, Delete) application built with **React JS** to manage a list of users (name & email). This project was created to practice state management, API integration, and component-based UI development.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
+✅ Add new user data  
+✅ Display all users  
+✅ Update existing data  
+✅ Delete user data  
+✅ Reusable form & UI feedback  
+✅ Live data from JSON Server API  
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧰 Tech Stack
+- React JS
+- Axios
+- React Hooks (useState, useEffect)
+- JSON Server (REST API Simulation)
+- Modern CSS
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🎯 Learning Focus
+- Component-based architecture
+- Breaking down UI into reusable parts
+- Managing state & events
+- CRUD operations via API
+- Handling form input in React
+
+---
+
+## 📦 Installation & Run
+
+```bash
+# Clone repository
+git clone https://github.com/ranggaapw/CRUD-sederhana-reactJS.git
+
+# Move to project folder
+cd CRUD-sederhana-reactJS
+
+# Install dependencies
+npm install
+
+# Run JSON Server
+npm run server
+
+# Run React App
+npm run dev
